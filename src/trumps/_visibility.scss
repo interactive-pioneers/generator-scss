@@ -1,0 +1,12 @@
+.hidden {
+  display: none;
+
+  @each $name, $query in $breakpoints {
+
+    @media #{$query} {
+      &--#{$name} {
+        display: none;
+      }
+    }
+  }
+}

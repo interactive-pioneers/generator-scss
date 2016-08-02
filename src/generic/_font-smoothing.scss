@@ -1,0 +1,9 @@
+/**
+ * additional font smoothing settings for chrome and firefox osx
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+ */
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}

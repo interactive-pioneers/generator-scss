@@ -1,0 +1,51 @@
+/**
+ *  Example:
+ *  @include media-query(desk) {
+ *    .block {
+ *      margin: auto;
+ *    }
+ *  }
+ *  or inside a class:
+ *  .block {
+ *    background: $black;
+ *
+ *    @include media-query(lap) {
+ *      background: $white;
+ *    }
+ *  }
+ *
+ *  you can even use multiple breakpoints / media query definitions:
+ *  @include media-query(lap, desk) {
+ *    ...
+ *  }
+ */
+
+@mixin media-query($media-queries...) {
+
+  $queries: ();
+
+  @each $key in $media-queries {
+
+    @if map-has-key($breakpoints, $key) {
+      $queries: append($queries, map-get($breakpoints, $key));
+    } @else {
+      @warn 'Breakpoint ‘#{$key}’ does not exist';
+    }
+
+  }
+
+  @if length($queries) > 0 {
+    $glue: ', ';
+    $query-string: null;
+
+    @for $i from 1 through length($queries) {
+      $query: nth($queries, $i);
+      $query-string: if($i != length($queries), $query-string#{$query}#{$glue}, $query-string#{$query});
+    }
+
+    @media #{$query-string} {
+      @content;
+    }
+  }
+
+}

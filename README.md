@@ -9,9 +9,9 @@
 
 ## Getting Started
 
-- Install generator
+- Install Yeoman and SCSS generator:
 
-        $ npm i -g generator-pioneerscss
+        $ npm i -g yo generator-pioneerscss
 
 - Run:
 

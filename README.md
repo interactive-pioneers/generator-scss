@@ -9,13 +9,17 @@
 
 ## Getting Started
 
-- Install Yeoman and SCSS generator:
+1. Install Yeoman and SCSS generator:
 
         $ npm i -g yo generator-pioneerscss
 
-- Run:
+2. Move to folder in which SCSS structure should be created at, e.g.:
 
-        $ yo pioneerscss <name of folder>
+        $ cd ~/projects/my-app/styles
+
+3. Scaffold structure by running:
+
+        $ yo pioneerscss
 
 ## Licence
 

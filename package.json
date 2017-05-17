@@ -9,7 +9,9 @@
     "url": "http://interactive-pioneers.de"
   },
   "files": [
-    "generators"
+    "generators",
+    "LICENSE",
+    "*.md"
   ],
   "main": "generators/index.js",
   "keywords": [

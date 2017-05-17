@@ -23,4 +23,4 @@
 
 ## Licence
 
-Copyright © 2017 Interactive Pioneers GmbH. Licenced under [GPL-3](LICENSE).
+Copyright © 2016,2017 Interactive Pioneers GmbH. Licenced under [GPL-3](LICENSE).

@@ -1,0 +1,55 @@
+{
+  "name": "generator-pioneerscss",
+  "version": "0.0.0",
+  "description": "Yeoman generator that scaffolds SCSS layout for front-end applications.",
+  "homepage": "https://github.com/interactive-pioneers/generator-pioneerscss",
+  "author": {
+    "name": "Interactive Pioneers GmbH",
+    "email": "hello@interactive-pioneers.de",
+    "url": "http://interactive-pioneers.de"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "scss",
+    "sass",
+    "css",
+    "generator",
+    "scaffold",
+    "frontend",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "yeoman-test": "^1.6.0",
+    "yeoman-assert": "^3.0.0",
+    "nsp": "^2.6.3",
+    "eslint": "^3.18.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.1"
+  },
+  "dependencies": {
+    "yeoman-generator": "^1.0.0",
+    "chalk": "^1.1.3",
+    "yosay": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "interactive-pioneers/generator-pioneerscss",
+  "license": "GPL-3.0"
+}

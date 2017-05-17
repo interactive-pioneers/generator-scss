@@ -1,3 +1,4 @@
+<% if (ipScss) { %>
 @import 'settings/breakpoints';
 @import 'settings/colours';
 @import 'settings/easing';
@@ -10,7 +11,7 @@
 @import 'tools/shapes';
 @import 'tools/widths';
 
-// @import '{path_to_bower_components}/normalize-css/normalize';
+//@import '{path_to_bower_components}/normalize-css/normalize';
 
 @import 'base/media';
 @import 'base/page';
@@ -26,9 +27,26 @@
 @import 'objects/responsive-video';
 @import 'objects/square';
 
-// @import 'components/';
+//@import 'components/';
 
 @import 'trumps/clearfix';
 @import 'trumps/visibility';
 @import 'trumps/widths-responsive';
 @import 'trumps/widths';
+<% } else { %>
+//@import 'settings/';
+
+//@import 'tools/';
+
+//@import '{path_to_bower_components}/normalize-css/normalize';
+
+//@import 'base/';
+
+//@import 'generic/';
+
+//@import 'objects/';
+
+//@import 'components/';
+
+//@import 'trumps/';
+<% } %>

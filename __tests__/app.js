@@ -16,6 +16,38 @@ describe('generator-pioneerscss:app', () => {
       ]);
     });
 
+    it('creates entry point content', () => {
+      assert.fileContent([
+        ['styles.scss', '@import \'settings/breakpoints\';'],
+        ['styles.scss', '@import \'settings/colours\';'],
+        ['styles.scss', '@import \'settings/easing\';'],
+        ['styles.scss', '@import \'settings/fonts\';'],
+        ['styles.scss', '@import \'settings/layout\';'],
+        ['styles.scss', '@import \'tools/font-size\';'],
+        ['styles.scss', '@import \'tools/math\';'],
+        ['styles.scss', '@import \'tools/media-queries\';'],
+        ['styles.scss', '@import \'tools/shapes\';'],
+        ['styles.scss', '@import \'tools/widths\';'],
+        ['styles.scss', '//@import \'{path_to_bower_components}/normalize-css/normalize\';'],
+        ['styles.scss', '@import \'base/media\';'],
+        ['styles.scss', '@import \'base/page\';'],
+        ['styles.scss', '@import \'generic/box-sizing\';'],
+        ['styles.scss', '@import \'generic/font-smoothing\';'],
+        ['styles.scss', '@import \'generic/helper\';'],
+        ['styles.scss', '@import \'generic/layout\';'],
+        ['styles.scss', '@import \'generic/smooth-scrolling\';'],
+        ['styles.scss', '@import \'objects/layout\';'],
+        ['styles.scss', '@import \'objects/picturefill-bg\';'],
+        ['styles.scss', '@import \'objects/responsive-video\';'],
+        ['styles.scss', '@import \'objects/square\';'],
+        ['styles.scss', '//@import \'components/\';'],
+        ['styles.scss', '@import \'trumps/clearfix\';'],
+        ['styles.scss', '@import \'trumps/visibility\';'],
+        ['styles.scss', '@import \'trumps/widths-responsive\';'],
+        ['styles.scss', '@import \'trumps/widths\';']
+      ]);
+    });
+
     it('creates base', () => {
       assert.file([
         'base/_media.scss',
@@ -83,6 +115,19 @@ describe('generator-pioneerscss:app', () => {
     it('creates entry point', () => {
       assert.file([
         'styles.scss'
+      ]);
+    });
+
+    it('creates entry point content', () => {
+      assert.fileContent([
+        ['styles.scss', '//@import \'settings/\';'],
+        ['styles.scss', '//@import \'tools/\';'],
+        ['styles.scss', '//@import \'{path_to_bower_components}/normalize-css/normalize\';'],
+        ['styles.scss', '//@import \'base/\';'],
+        ['styles.scss', '//@import \'generic/\';'],
+        ['styles.scss', '//@import \'objects/\';'],
+        ['styles.scss', '//@import \'components/\';'],
+        ['styles.scss', '//@import \'trumps/\';']
       ]);
     });
 

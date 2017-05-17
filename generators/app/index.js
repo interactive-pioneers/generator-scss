@@ -24,9 +24,10 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('src/styles.scss'),
-      this.destinationPath('styles.scss')
+      this.destinationPath('styles.scss'),
+      this.props
     );
 
     this.fs.copy(

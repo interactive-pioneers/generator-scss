@@ -1,4 +1,5 @@
-# generator-pioneerscss [![Build Status](https://secure.travis-ci.org/interactive-pioneers/generator-pioneerscss.svg?branch=master)](http://travis-ci.org/interactive-pioneers/generator-pioneerscss)
+# generator-pioneerscss [![Build Status](https://secure.travis-ci.org/interactive-pioneers/generator-pioneerscss.svg?branch=master)](http://travis-ci.org/interactive-pioneers/generator-pioneerscss) [![npm version](https://badge.fury.io/js/generator-pioneerscss.svg)](http://badge.fury.io/js/generator-pioneerscss)
+
 
 [Yeoman](http://yeoman.io) generator that scaffolds SCSS layout for front-end applications.
 
@@ -23,4 +24,4 @@
 
 ## Licence
 
-Copyright © 2016,2017 Interactive Pioneers GmbH. Licenced under [GPL-3](LICENSE).
+Copyright © 2016, 2017 Interactive Pioneers GmbH. Licenced under [GPL-3](LICENSE).

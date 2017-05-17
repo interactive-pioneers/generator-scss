@@ -159,8 +159,4 @@ module.exports = class extends Generator {
       this.destinationPath('trumps/_widths.scss')
     );
   }
-
-  install() {
-    this.installDependencies();
-  }
 };

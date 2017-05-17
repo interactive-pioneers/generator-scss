@@ -40,7 +40,7 @@
   },
   "scripts": {
     "prepublish": "nsp check",
-    "pretest": "eslint . --fix",
+    "pretest": "eslint .",
     "test": "jest"
   },
   "eslintConfig": {

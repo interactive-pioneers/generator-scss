@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Interactive Pioneers GmbH",
+      "authorEmail": "hello@interactive-pioneers.de",
+      "authorUrl": "http://interactive-pioneers.de"
+    }
+  }
+}

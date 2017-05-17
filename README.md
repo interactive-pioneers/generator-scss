@@ -1,4 +1,4 @@
-# generator-pioneerscss
+# generator-pioneerscss [![Build Status](https://secure.travis-ci.org/interactive-pioneers/generator-pioneerscss.svg?branch=master)](http://travis-ci.org/interactive-pioneers/generator-pioneerscss)
 
 [Yeoman](http://yeoman.io) generator that scaffolds SCSS layout for front-end applications.
 

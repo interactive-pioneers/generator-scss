@@ -5,7 +5,7 @@
 
 ## Requirements
 
-- Node.js `^6.2.0`
+- Node.js `^7.0.0`
 - [Yeoman](http://yeoman.io)
 
 ## Getting Started
@@ -24,4 +24,4 @@
 
 ## Licence
 
-Copyright © 2016, 2017 Interactive Pioneers GmbH. Licenced under [GPL-3](LICENSE).
+Copyright © 2017 Interactive Pioneers GmbH. Licenced under [GPL-3](LICENSE).

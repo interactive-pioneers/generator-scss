@@ -14,7 +14,7 @@
  *    }
  *  }
  *
- *  you can even use multiple breakpoints / media query definitions:
+ *  you can also supply multiple breakpoints / media query definitions:
  *  @include media-query(lap, desk) {
  *    ...
  *  }
@@ -31,7 +31,6 @@
     } @else {
       @warn 'Breakpoint ‘#{$key}’ does not exist';
     }
-
   }
 
   @if length($queries) > 0 {
@@ -47,5 +46,4 @@
       @content;
     }
   }
-
 }

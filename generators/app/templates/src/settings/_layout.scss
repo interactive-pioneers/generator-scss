@@ -1,7 +1,10 @@
 $namespace: '';
-$base-spacing-unit: 10px;
+$base-spacing-unit: 20px;
 
-$max-page-width: 1920px;
+$wrapper-width: 1920px;
+$wrapper-gutter: $base-spacing-unit;
+
+$push: $base-spacing-unit;
 
 // $enable-layout--tiny: true;
 // $enable-layout--small: true;

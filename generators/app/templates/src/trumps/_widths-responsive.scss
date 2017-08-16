@@ -24,7 +24,5 @@ $widths-columns-responsive: (
     @each $widths-column in $widths-columns-responsive {
       @include widths($widths-column, -#{$alias});
     }
-
   }
-
 }

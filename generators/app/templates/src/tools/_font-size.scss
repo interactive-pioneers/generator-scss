@@ -12,7 +12,5 @@
     } @elseif ($line-height != none and $line-height != false) {
       @warn 'D’oh! ‘#{$line-height}’ is not a valid value for `line-height`.'
     }
-
   }
-
 }

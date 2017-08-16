@@ -1,0 +1,30 @@
+@mixin placeholder($color, $opacity: 1) {
+  // scss-lint:disable VendorPrefix PseudoElement
+  &::-webkit-input-placeholder {
+    opacity: $opacity;
+
+    color: $color;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    opacity: $opacity;
+
+    color: $color;
+
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    opacity: $opacity;
+
+    color: $color;
+
+  }
+
+  &:-ms-input-placeholder {
+    opacity: $opacity;
+
+    color: $color;
+
+  }
+  // scss-lint:enable VendorPrefix PseudoElement
+}

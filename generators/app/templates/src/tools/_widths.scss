@@ -28,11 +28,7 @@
         .is-#{$widths-numerator}-of-#{$widths-denominator}#{$widths-breakpoint} {
           width: ($widths-numerator / $widths-denominator) * 100%;
         }
-
       }
-
     }
-
   }
-
 }

@@ -1,0 +1,68 @@
+.clearfix::after {
+  clear: both;
+
+  display: table;
+
+  content: '';
+}
+
+.hidden {
+  display: none;
+
+  @each $name, $query in $breakpoints {
+
+    @media #{$query} {
+      &-#{$name} {
+        display: none;
+      }
+    }
+  }
+}
+
+.margin {
+  &-bottom {
+    @for $i from 1 through 10 {
+      &-#{$i * 5}px {
+        margin-bottom: $i * 5px;
+      }
+    }
+  }
+}
+
+.push {
+  margin-bottom: $push;
+
+  &--1\/2 {
+    margin-bottom: $push * 0.5;
+  }
+
+  &--2x {
+    margin-bottom: $push * 2;
+  }
+}
+
+.full-width,
+.full-size {
+  width: 100%;
+}
+
+.full-height,
+.full-size {
+  height: 100%;
+}
+
+.background-fixed {
+  @include media-query(lap-up) {
+    background-attachment: fixed;
+  }
+}
+
+.text-color {
+  &--black {
+    color: $black;
+  }
+
+  &--white {
+    color: $white;
+  }
+}

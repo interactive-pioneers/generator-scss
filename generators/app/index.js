@@ -9,5 +9,9 @@ module.exports = class extends Generator {
       this.templatePath('src/**/*.scss'),
       this.destinationPath()
     );
+    this.fs.copy(
+      this.templatePath('src/components/.gitkeep'),
+      this.destinationPath('components/.gitkeep')
+    );
   }
 };

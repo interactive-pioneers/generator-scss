@@ -1,6 +1,6 @@
 {
   "name": "generator-pioneerscss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yeoman generator that scaffolds SCSS layout for front-end applications.",
   "homepage": "https://github.com/interactive-pioneers/generator-pioneerscss",
   "author": {

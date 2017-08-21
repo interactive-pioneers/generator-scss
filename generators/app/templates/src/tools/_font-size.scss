@@ -1,7 +1,8 @@
 @mixin font-size($font-size, $line-height: auto) {
-  // scss-lint:disable DuplicateProperty
+  // sass-lint:disable no-duplicate-properties
   font-size: $font-size;
   font-size: ($font-size / $base-font-size) * 1rem;
+  // sass-lint:enable no-duplicate-properties
 
   @if $line-height == auto {
     line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);

@@ -16,8 +16,9 @@
     // If we’re trying to make wholes, just spit a 100% width utility out one time only.
     @if ($widths-denominator == 1) {
       .is-1-of-1#{$widths-breakpoint} {
-        // scss-lint:disable ImportantRule
+        // sass-lint:disable no-important
         width: 100% !important;
+        // sass-lint:enable no-important
       }
     } @else {
 

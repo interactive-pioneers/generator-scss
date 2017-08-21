@@ -1,5 +1,5 @@
 @mixin placeholder($color, $opacity: 1) {
-  // scss-lint:disable VendorPrefix PseudoElement
+  // sass-lint:disable no-vendor-prefixes
   &::-webkit-input-placeholder {
     opacity: $opacity;
 
@@ -26,5 +26,5 @@
     color: $color;
 
   }
-  // scss-lint:enable VendorPrefix PseudoElement
+  // sass-lint:enable no-vendor-prefixes
 }

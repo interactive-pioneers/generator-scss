@@ -52,7 +52,7 @@
 }
 
 .background-fixed {
-  @include media-query(lap-up) {
+  @include media-query(tablet-up) {
     background-attachment: fixed;
   }
 }

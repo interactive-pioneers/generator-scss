@@ -47,7 +47,7 @@
     "prepublish": "nsp check",
     "pretest": "eslint .",
     "test": "jest",
-    "lint": "sass-lint --config .sass-lint.yml 'generators/app/templates/src/**/*.scss' --verbose --no-exit"
+    "posttest": "sass-lint --config .sass-lint.yml 'generators/app/templates/src/**/*.scss'"
   },
   "eslintConfig": {
     "extends": "xo-space",

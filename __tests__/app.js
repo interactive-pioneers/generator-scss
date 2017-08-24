@@ -18,7 +18,8 @@ describe('generator-pioneerscss:app', () => {
     it('creates base', () => {
       assert.file([
         'base/_media.scss',
-        'base/_page.scss'
+        'base/_page.scss',
+        'base/_text.scss'
       ]);
     });
 
@@ -30,7 +31,11 @@ describe('generator-pioneerscss:app', () => {
 
     it('creates generic', () => {
       assert.file([
-        'generic/_box-sizing.scss'
+        'generic/_box-sizing.scss',
+        'generic/_font-smoothing.scss',
+        'generic/_helper.scss',
+        'generic/_layout.scss',
+        'generic/_smooth-scrolling.scss'
       ]);
     });
 
@@ -57,6 +62,7 @@ describe('generator-pioneerscss:app', () => {
         'tools/_font-size.scss',
         'tools/_math.scss',
         'tools/_media-queries.scss',
+        'tools/_placeholder.scss',
         'tools/_shapes.scss',
         'tools/_widths.scss'
       ]);
@@ -67,6 +73,12 @@ describe('generator-pioneerscss:app', () => {
         'trumps/_helper.scss',
         'trumps/_widths-responsive.scss',
         'trumps/_widths.scss'
+      ]);
+    });
+
+    it('creates vendor', () => {
+      assert.file([
+        'vendor/_normalize-scss.scss'
       ]);
     });
   });

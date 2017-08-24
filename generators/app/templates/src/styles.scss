@@ -11,8 +11,7 @@
 @import 'tools/shapes';
 @import 'tools/widths';
 
-// node_modules/ has to be added to includePaths
-@import 'normalize-scss/sass/normalize';
+@import 'vendor/normalize-scss';
 
 @import 'base/media';
 @import 'base/page';

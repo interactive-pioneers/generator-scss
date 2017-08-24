@@ -13,4 +13,7 @@ module.exports = class extends Generator {
       this.destinationPath('components/.gitkeep')
     );
   }
+  install() {
+    this.npmInstall(['normalize-scss'], {'save-dev': true});
+  }
 };

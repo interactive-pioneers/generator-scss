@@ -29,7 +29,6 @@
     "jest": "^20.0.4",
     "jest-cli": "^20.0.4",
     "node-sass": "^4.5.3",
-    "normalize-scss": "^7.0.0",
     "nsp": "^2.6.3",
     "sass-lint": "^1.10.2",
     "yeoman-assert": "^3.0.0",

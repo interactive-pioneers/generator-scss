@@ -1,0 +1,16 @@
+/*
+use around hover declarations to disable on touch devices
+*/
+@mixin hover {
+  @include media-query(desktop-up) {
+    @content;
+  }
+
+  /*
+  unfortunately not yet supported in firefox and ie11
+  use when supported
+  @media (hover:on-demand) {
+    @content;
+  }
+  */
+}

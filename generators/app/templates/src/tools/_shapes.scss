@@ -11,7 +11,7 @@
 }
 
 @mixin arrow($direction, $size, $thickness, $color) {
-  @include icon-arrow-dimensions($direction, $size, $thickness);
+  @include arrow-dimensions($direction, $size, $thickness);
 
   position: relative;
 

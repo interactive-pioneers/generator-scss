@@ -60,6 +60,7 @@ describe('generator-pioneerscss:app', () => {
     it('creates tools', () => {
       assert.file([
         'tools/_font-size.scss',
+        'tools/_hover.scss',
         'tools/_math.scss',
         'tools/_media-queries.scss',
         'tools/_placeholder.scss',

@@ -1,3 +1,56 @@
+@mixin arrow-round($direction, $width, $height, $thickness, $color) {
+  $heightUnitless: stripunit($height);
+  $heightUnit: $height / $heightUnitless;
+  $widthUnitless: stripunit($width);
+  $widthUnit: $width / $widthUnitless;
+  @if $heightUnit == 1 {
+    $heightUnit: 1px;
+  }
+  @if $widthUnit == 1 {
+    $widthUnit: 1px;
+  }
+
+  $hypotenuse: squareroot(power($widthUnitless, 2) + power($heightUnitless * 0.5, 2));
+  $angle: arcussinus(($heightUnitless * 0.5) / $hypotenuse);
+
+  position: absolute;
+  display: block;
+  width: $widthUnitless * $widthUnit;
+  height: $heightUnitless * $heightUnit;
+
+  @if $direction == 'up' {
+    transform: rotate(90deg);
+  } @else if $direction == 'right' {
+    transform: rotate(180deg);
+  } @else if $direction == 'down' {
+    transform: rotate(-90deg);
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: calc(50% - #{$thickness * 0.5});
+    left: 0;
+    display: block;
+    width: ($hypotenuse / $widthUnitless) * 100%;
+    height: $thickness;
+
+    border-radius: $thickness * 0.5;
+    background: $color;
+
+    transform-origin: $thickness * 0.5 $thickness * 0.5;
+    content: '';
+  }
+
+  &::before {
+    transform: rotate(-#{$angle}rad);
+  }
+
+  &::after {
+    transform: rotate(#{$angle}rad);
+  }
+}
+
 @mixin arrow-dimensions($direction, $size, $thickness) {
   $shorter-side: $size;
   $longer-side: 2 * ($shorter-side - $thickness / 1.4142);

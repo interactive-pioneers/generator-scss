@@ -14,6 +14,7 @@
   $angle: arcussinus(($heightUnitless * 0.5) / $hypotenuse);
 
   position: absolute;
+
   display: block;
   width: $widthUnitless * $widthUnit;
   height: $heightUnitless * $heightUnit;
@@ -31,6 +32,7 @@
     position: absolute;
     top: calc(50% - #{$thickness * 0.5});
     left: 0;
+
     display: block;
     width: ($hypotenuse / $widthUnitless) * 100%;
     height: $thickness;
@@ -39,6 +41,7 @@
     background: $color;
 
     transform-origin: $thickness * 0.5 $thickness * 0.5;
+
     content: '';
   }
 

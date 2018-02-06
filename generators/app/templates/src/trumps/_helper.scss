@@ -19,16 +19,6 @@
   }
 }
 
-.margin {
-  &-bottom {
-    @for $i from 1 through 10 {
-      &-#{$i * 5}px {
-        margin-bottom: $i * 5px;
-      }
-    }
-  }
-}
-
 .push {
   margin-bottom: $push;
 
@@ -49,20 +39,4 @@
 .full-height,
 .full-size {
   height: 100%;
-}
-
-.background-fixed {
-  @include media-query(tablet-up) {
-    background-attachment: fixed;
-  }
-}
-
-.text-color {
-  &--black {
-    color: $black;
-  }
-
-  &--white {
-    color: $white;
-  }
 }

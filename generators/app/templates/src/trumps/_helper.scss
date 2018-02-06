@@ -9,11 +9,13 @@
 .hidden {
   display: none;
 
-  @each $name, $query in $breakpoints {
+  @each $name in $breakpoints {
 
-    @media #{$query} {
-      &-#{$name} {
-        display: none;
+    @if map-has-key($media-queries, $name) {
+      @media #{map-get($media-queries, $name)} {
+        &-#{$name} {
+          display: none;
+        }
       }
     }
   }

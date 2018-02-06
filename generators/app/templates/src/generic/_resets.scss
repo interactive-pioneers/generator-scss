@@ -1,0 +1,53 @@
+.button-reset {
+  overflow: visible;
+  padding: 0;
+  border: 0;
+
+  appearance: none;
+  border-radius: 0;
+  background: none;
+
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+
+  user-select: none;
+
+  // sass-lint:disable no-vendor-prefixes
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  // sass-lint:enable no-vendor-prefixes
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.link-reset {
+  color: $black;
+  text-decoration: none;
+
+  &:focus,
+  &:active {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.input-reset {
+  padding: 0;
+  border: 0;
+
+  appearance: none;
+  outline: none;
+  background: none;
+}

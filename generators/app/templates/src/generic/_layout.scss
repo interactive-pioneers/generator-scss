@@ -1,6 +1,7 @@
 .wrapper {
   margin: 0 auto;
-  padding: 0 $wrapper-gutter;
   width: 100%;
   max-width: $wrapper-width;
+  border-right: $wrapper-gutter solid transparent;
+  border-left: $wrapper-gutter solid transparent;
 }

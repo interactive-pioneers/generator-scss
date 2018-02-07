@@ -53,6 +53,43 @@
   transform: translate3d(-50%, -50%, 0);
 }
 
+.object-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  @media (min-aspect-ratio: 16 / 9) {
+    top: -100%;
+
+    height: 300%;
+  }
+
+  @media (max-aspect-ratio: 16 / 9) {
+    left: -100%;
+
+    width: 300%;
+  }
+
+  @supports (object-fit: cover) {
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.background-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .center-block {
   display: block;
   margin: 0 auto;
@@ -92,10 +129,4 @@
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.background-cover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }

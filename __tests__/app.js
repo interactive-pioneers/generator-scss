@@ -35,6 +35,7 @@ describe('generator-pioneerscss:app', () => {
         'generic/_font-smoothing.scss',
         'generic/_helper.scss',
         'generic/_layout.scss',
+        'generic/_resets.scss',
         'generic/_smooth-scrolling.scss'
       ]);
     });
@@ -42,8 +43,7 @@ describe('generator-pioneerscss:app', () => {
     it('creates objects', () => {
       assert.file([
         'objects/_aspect.scss',
-        'objects/_layout.scss',
-        'objects/_picturefill-bg.scss'
+        'objects/_layout.scss'
       ]);
     });
 
@@ -65,15 +65,16 @@ describe('generator-pioneerscss:app', () => {
         'tools/_media-queries.scss',
         'tools/_placeholder.scss',
         'tools/_shapes.scss',
+        'tools/_string.scss',
+        'tools/_svg.scss',
         'tools/_widths.scss'
       ]);
     });
 
     it('creates trumps', () => {
       assert.file([
-        'trumps/_helper.scss',
-        'trumps/_widths-responsive.scss',
-        'trumps/_widths.scss'
+        'trumps/_grid.scss',
+        'trumps/_helper.scss'
       ]);
     });
 

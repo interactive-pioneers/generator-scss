@@ -26,8 +26,8 @@
   "devDependencies": {
     "eslint": "^4.5.0",
     "eslint-config-xo-space": "^0.16.0",
-    "jest": "^20.0.4",
-    "jest-cli": "^20.0.4",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
     "node-sass": "^4.5.3",
     "nsp": "^2.6.3",
     "sass-lint": "^1.10.2",
@@ -35,7 +35,7 @@
     "yeoman-test": "^1.6.0"
   },
   "dependencies": {
-    "yeoman-generator": "^1.0.0",
+    "yeoman-generator": "^2.0.5",
     "chalk": "^2.1.0",
     "yosay": "^2.0.0"
   },

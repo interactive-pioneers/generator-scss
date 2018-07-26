@@ -24,26 +24,24 @@
     "yeoman-generator"
   ],
   "devDependencies": {
-    "eslint": "^4.5.0",
-    "eslint-config-xo-space": "^0.16.0",
-    "jest": "^22.4.3",
-    "jest-cli": "^22.4.3",
-    "node-sass": "^4.5.3",
-    "nsp": "^2.6.3",
-    "sass-lint": "^1.10.2",
-    "yeoman-assert": "^3.0.0",
-    "yeoman-test": "^1.6.0"
+    "eslint": "^5.2.0",
+    "eslint-config-xo-space": "^0.19.0",
+    "jest": "^23.4.1",
+    "jest-cli": "^23.4.1",
+    "node-sass": "^4.9.2",
+    "sass-lint": "^1.12.1",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.8.0"
   },
   "dependencies": {
-    "yeoman-generator": "^2.0.5",
-    "chalk": "^2.1.0",
-    "yosay": "^2.0.0"
+    "yeoman-generator": "^3.1.0",
+    "chalk": "^2.4.1",
+    "yosay": "^2.0.2"
   },
   "jest": {
     "testEnvironment": "node"
   },
   "scripts": {
-    "prepublish": "nsp check",
     "pretest": "eslint .",
     "test": "jest",
     "posttest": "sass-lint --config .sass-lint.yml 'generators/app/templates/src/**/*.scss'"

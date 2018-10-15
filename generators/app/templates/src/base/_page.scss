@@ -4,18 +4,4 @@ body {
 
   font-size: $base-font-size;
   line-height: $base-line-height;
-
-  &::before {
-    display: none;
-
-    content: 'phone';
-
-    @include media-query(tablet) {
-      content: 'tablet';
-    }
-
-    @include media-query(desktop) {
-      content: 'desktop';
-    }
-  }
 }

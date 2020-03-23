@@ -6,12 +6,12 @@ $breakpoints: (
   // 'tablet-s': '(min-width: 641px) and (max-width: 780px)',
   // 'tablet-m': '(min-width: 781px) and (max-width: 900px)',
   // 'tablet-l': '(min-width: 901px) and (max-width: 1024px)',
-  'tablet': '(min-width: 641px) and (max-width: 1024px)',
+  //'tablet': '(min-width: 641px) and (max-width: 1024px)',
   'tablet-up': '(min-width: 641px)',
-  'portable': '(max-width: 1024px)',
-  'desktop': '(min-width: 1025px) and (max-width: 1920px)',
+  //'portable': '(max-width: 1024px)',
+  //'desktop': '(min-width: 1025px) and (max-width: 1920px)',
   'desktop-up': '(min-width: 1025px)',
-  'hd-up': '(min-width: 1920px)',
+  //'hd-up': '(min-width: 1920px)',
   // 'uhd-up': '(min-width: 3840px)',
   // '4k-up': '(min-width: 4096px)'
 );

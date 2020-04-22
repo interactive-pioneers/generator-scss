@@ -131,7 +131,19 @@ rules:
         - overflow
         - overflow-x
         - overflow-y
+        - clip
+        - clip-path
         - box-sizing
+        - border
+        - border-width
+        - border-top
+        - border-top-width
+        - border-right
+        - border-right-width
+        - border-bottom
+        - border-bottom-width
+        - border-left
+        - border-left-width
         - margin
         - margin-top
         - margin-right
@@ -148,41 +160,21 @@ rules:
         - height
         - min-height
         - max-height
-        - border-collapse
-        - border-spacing
-        - border
-        - border-width
-        - border-style
-        - border-color
-        - border-top
-        - border-top-width
-        - border-top-style
-        - border-top-color
-        - border-right
-        - border-right-width
-        - border-right-style
-        - border-right-color
-        - border-bottom
-        - border-bottom-width
-        - border-bottom-style
-        - border-bottom-color
-        - border-left
-        - border-left-width
-        - border-left-style
-        - border-left-color
-        - flex
         - flex-flow
         - flex-direction
         - flex-wrap
-        - flex-grow
-        - flex-shrink
-        - flex-basis
         - justify-content
         - align-items
         - align-content
+        - flex
+        - flex-grow
+        - flex-shrink
+        - flex-basis
         - align-self
         - order
         - table-layout
+        - border-collapse
+        - border-spacing
         - caption-side
         - empty-cells
         - columns
@@ -192,11 +184,19 @@ rules:
         - column-span
         - column-count
         - column-width
-        - clip
-        - clip-path
         - null
         - visibility
         - opacity
+        - border-style
+        - border-color
+        - border-top-style
+        - border-top-color
+        - border-right-style
+        - border-right-color
+        - border-bottom-style
+        - border-bottom-color
+        - border-left-style
+        - border-left-color
         - border-radius
         - border-top-left-radius
         - border-top-right-radius
